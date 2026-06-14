@@ -1,0 +1,3 @@
+packages:
+    vty-crossplatform.cabal
+    vty-wasm/vty-wasm.cabal

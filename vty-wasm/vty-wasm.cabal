@@ -1,0 +1,26 @@
+cabal-version:      3.0
+name:               vty-wasm
+version:            0.1.0.0
+synopsis:           Vty wasm backend
+-- description:
+license:            BSD-3-Clause
+license-file:       LICENSE
+author:             Vasily Sterekhov
+-- maintainer:
+copyright:          (c) 2026 Vasily Sterekhov
+category:           Graphics
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+
+common warnings
+    ghc-options: -Wall
+
+library
+    import:           warnings
+    hs-source-dirs:   src
+    default-language: Haskell2010
+    exposed-modules:  Graphics.Vty.Platform.Wasm
+                    , Graphics.Vty.Platform.Wasm.Settings
+                    , Graphics.Vty.Platform.Wasm.Output
+    build-depends:    base >= 4.8 && < 5
+                    , vty >= 6.1

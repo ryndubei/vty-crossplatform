@@ -31,6 +31,8 @@ import Graphics.Vty.Config (VtyUserConfig)
 -- got used to do the build.
 #if defined(mingw32_HOST_OS) || defined(__MINGW32__)
 import qualified Graphics.Vty.Platform.Windows as Platform
+#elif defined(wasi_HOST_OS)
+import qualified Graphics.Vty.Platform.Wasm as Platform
 #else
 import qualified Graphics.Vty.Platform.Unix as Platform
 #endif
