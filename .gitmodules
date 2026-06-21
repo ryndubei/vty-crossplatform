@@ -1,0 +1,3 @@
+[submodule "vty-wasi"]
+	path = vty-wasi
+	url = https://github.com/ryndubei/vty-wasi
